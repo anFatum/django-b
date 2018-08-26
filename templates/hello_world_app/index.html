@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Django App</title>
-</head>
-<body>
 
-    <h1>Hello Django</h1>
+{% extends 'base.html' %}
+{% block body_block %}
 
-    {{ insert_me }}
-
-</body>
-</html>
+    <div class="jumbotron">
+        <h2>{{ insert_me | title }}</h2>
+    </div>
+{% endblock %}
